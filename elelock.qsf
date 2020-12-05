@@ -1,0 +1,71 @@
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name DEVICE EP1C6Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY elelocktop
+set_global_assignment -name VERILOG_FILE ledout.v
+set_global_assignment -name VERILOG_FILE syncro.v
+set_global_assignment -name VERILOG_FILE elelock.v
+set_global_assignment -name VERILOG_FILE elelocktop.v
+set_global_assignment -name DEVICE_FILTER_PACKAGE PQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 240
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_location_assignment PIN_19 -to push[0]
+set_location_assignment PIN_20 -to push[1]
+set_location_assignment PIN_21 -to push[2]
+set_location_assignment PIN_23 -to push[3]
+set_location_assignment PIN_15 -to push[4]
+set_location_assignment PIN_16 -to push[5]
+set_location_assignment PIN_17 -to push[6]
+set_location_assignment PIN_8 -to push[7]
+set_location_assignment PIN_11 -to push[8]
+set_location_assignment PIN_12 -to push[9]
+set_location_assignment PIN_7 -to mem
+set_location_assignment PIN_14 -to cls
+set_location_assignment PIN_58 -to led0[0]
+set_location_assignment PIN_59 -to led0[1]
+set_location_assignment PIN_60 -to led0[2]
+set_location_assignment PIN_61 -to led0[3]
+set_location_assignment PIN_62 -to led0[4]
+set_location_assignment PIN_63 -to led0[5]
+set_location_assignment PIN_64 -to led0[6]
+set_location_assignment PIN_66 -to led1[0]
+set_location_assignment PIN_67 -to led1[1]
+set_location_assignment PIN_68 -to led1[2]
+set_location_assignment PIN_73 -to led1[3]
+set_location_assignment PIN_74 -to led1[4]
+set_location_assignment PIN_75 -to led1[5]
+set_location_assignment PIN_76 -to led1[6]
+set_location_assignment PIN_78 -to led2[0]
+set_location_assignment PIN_79 -to led2[1]
+set_location_assignment PIN_82 -to led2[2]
+set_location_assignment PIN_83 -to led2[3]
+set_location_assignment PIN_84 -to led2[4]
+set_location_assignment PIN_85 -to led2[5]
+set_location_assignment PIN_86 -to led2[6]
+set_location_assignment PIN_88 -to led3[0]
+set_location_assignment PIN_93 -to led3[1]
+set_location_assignment PIN_94 -to led3[2]
+set_location_assignment PIN_95 -to led3[3]
+set_location_assignment PIN_98 -to led3[4]
+set_location_assignment PIN_99 -to led3[5]
+set_location_assignment PIN_100 -to led3[6]
+set_location_assignment PIN_104 -to led4[0]
+set_location_assignment PIN_105 -to led4[1]
+set_location_assignment PIN_106 -to led4[2]
+set_location_assignment PIN_107 -to led4[3]
+set_location_assignment PIN_108 -to led4[4]
+set_location_assignment PIN_113 -to led4[5]
+set_location_assignment PIN_114 -to led4[6]
+set_location_assignment PIN_28 -to CLK
+set_location_assignment PIN_240 -to RST
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS NOT_USED -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH sim_top_led -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME test_calc -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_calc
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_calc -section_id test_calc
+set_global_assignment -name EDA_TEST_BENCH_FILE calctest.v -section_id test_calc
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id To
